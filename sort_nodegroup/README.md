@@ -38,10 +38,22 @@ The node have 3 output fields:
 
 Because of the limitations described above almost always a part of the field will be missed. The missed values are shown in the tail of the line as a flat section all set to the maximum value.
 
+![Sorted field](imgs/sorted_field.png?raw=true "Sorted field")
+
+![Sorted index](imgs/sorted_index.png?raw=true "Sorted index")
+
 
 By increasing the number of sampling points above the number of input points it is possible to obtain a larger section of the sorted field. It seems that with uniformly generated values a sampler with approximately 10 times the points can output the complete field.
 
+![Upsampled sorted field](imgs/upsampling_sorted.png?raw=true "Upsampled sorted field")
+
+![Upsampled sorted index](imgs/upsampling_index.png?raw=true "Upsampled sorted index")
+
 If one needs to have the same number of output values as the field size but can accept some amount of duplication in the output is it possible to play with the "Nudge fraction" and "Nudge seed" values. When using the nudges if the user increases the sampler above the size of the input field the output will become larger than the input.
+
+![Nudged sorted duplication](imgs/nudge_sorted_duplication.png?raw=true "Nudged sorted duplication")
+
+![Nudged index duplication detail](imgs/nudge_index_duplication.png?raw=true "Nudged index duplication detail")
 
 ## Support
 
